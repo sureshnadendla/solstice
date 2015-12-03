@@ -1,8 +1,15 @@
-<ion-view title="Sessions">
-    <ion-header-bar class="bar bar-assertive">
-    <h1 class="title">Search</h1>
-  </ion-header-bar>
-    <style type="text/css">
+
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link rel="stylesheet" href="http://code.ionicframework.com/1.0.0-beta.1/css/ionic.css" />
+    <script src="http://code.ionicframework.com/1.0.0-beta.1/js/ionic.bundle.js"></script>
+    <script>
+      angular.module('ionicApp', ['ionic'])
+    </script>
+  </head>
+<style type="text/css">
     body {
       background-color: #fff;
     }
@@ -23,335 +30,362 @@
       color: #fff;
     }
   </style>
-  <ion-content>
+  <body ng-app="ionicApp">
+    <div class="bar bar-header bar-assertive">
+  <h1 class="title">Schedules</h1>
+</div>
+<ion-scroll direction="xy">
             <div class="list">
-                <div class="item item-divider">
+                <div style="margin-top:42px" class="item item-divider">
                     Day 1 - Fri, 18th Dec
                 </div>
+                <div class="item">
                     <div class="circle">
-    <div style="color:grey;font-size:14px" class="text">10:00 AM</div>
+    <div style="color:grey;font-size:12px" class="text">10:00 AM</div>
   </div>
-                    <div style="margin-left:80px; margin-top:-86px;">
+                    <div style="margin-left:70px; margin-top:-60px">
                     <p style="font-size:20px;color:blue">Registration</p>
-                    <p style="margin-top:-16px">10:00 AM to 01:30:00 PM</p>
-                    <p style="margin-top:-14px">Registration</p>
+                    <p style="margin-top:-6px">10:00 AM to 01:30 PM</p>
+                    <p style="margin-top:-12px">Registration</p>
+                    </div>
                     </div>
                 
+                <div class="item">
                 <div class="circle">
-    <div style="color:grey;font-size:14px" class="text">01:00 PM</div>
+    <div style="color:grey;font-size:12px" class="text">01:00 PM</div>
   </div>
-                    <div style="margin-left:80px; margin-top:-86px;">
+                    <div style="margin-left:70px; margin-top:-60px">
                     <p style="font-size:20px;color:blue">FETE For Kids</p>
-                    <p style="margin-top:-16px">01:00 PM to 07:00 PM</p>
-                    <p style="margin-top:-14px">Arts & creativity approach</p>
+                    <p style="margin-top:-6px">01:00 PM to 07:00 PM</p>
+                    <p style="margin-top:-12px">Arts & creativity approach</p>
                     </div>
-
+</div>
+<div class="item">
                 <div class="circle">
-    <div style="color:grey;font-size:14px" class="text">04:00 PM</div>
+    <div style="color:grey;font-size:12px" class="text">04:00 PM</div>
   </div>
-                    <div style="margin-left:80px; margin-top:-86px;">
+                    <div style="margin-left:70px; margin-top:-60px">
                     <p style="font-size:20px;color:blue">Sundowner at Ampitheatre</p>
-                    <p style="margin-top:-16px">04:00 PM to 07:00 PM</p>
-                    <p style="margin-top:-14px">Co06/Co11 Band at Ampitheatre</p>
+                    <p style="margin-top:-6px">04:00 PM to 07:00 PM</p>
+                    <p style="margin-top:-12px">Co06/Co11 Band at Ampitheatre</p>
                     </div>
+</div>
 
+<div class="item">
                 <div class="circle">
-    <div style="color:grey;font-size:14px" class="text">07:00 PM</div>
+    <div style="color:grey;font-size:12px" class="text">07:00 PM</div>
   </div>
-                    <div style="margin-left:80px; margin-top:-86px;">
+                    <div style="margin-left:70px; margin-top:-60px">
                     <p style="font-size:20px;color:blue">Comedy Night</p>
-                    <p style="margin-top:-14px">07:00 PM to 08:00 PM</p>
-                    <p style="margin-top:-14px">Ampitheatre</p>
+                    <p style="margin-top:-6px">07:00 PM to 08:00 PM</p>
+                    <p style="margin-top:-12px">Ampitheatre</p>
                     </div>
+</div>
 
+<div class="item">
                 <div class="circle">
-    <div style="color:grey;font-size:14px" class="text">06:30 PM</div>
+    <div style="color:grey;font-size:12px" class="text">06:30 PM</div>
   </div>
-                    <div style="margin-left:80px; margin-top:-86px;">
+                    <div style="margin-left:70px; margin-top:-60px">
                     <p style="font-size:20px;color:blue">Shlamak Zumba</p>
-                    <p style="margin-top:-14px">06:30 PM to 08:00 PM</p>
-                    <p style="margin-top:-14px">Yoga room/ TBD</p>
+                    <p style="margin-top:-6px">06:30 PM to 08:00 PM</p>
+                    <p style="margin-top:-12px">Yoga room/ TBD</p>
                     </div>
-
+</div>
+<div class="item">
                 <div class="circle">
-    <div style="color:grey;font-size:14px" class="text">08:00 PM</div>
+    <div style="color:grey;font-size:12px" class="text">08:00 PM</div>
   </div>
-                    <div style="margin-left:80px; margin-top:-86px;">
+                    <div style="margin-left:70px; margin-top:-60px">
                     <p style="font-size:20px;color:blue">Dinner</p>
-                    <p style="margin-top:-14px">08:00 PM to 09:30 PM</p>
-                    <p style="margin-top:-14px">SV 3 Lawns</p>
+                    <p style="margin-top:-6px">08:00 PM to 09:30 PM</p>
+                    <p style="margin-top:-12px">SV 3 Lawns</p>
                     </div>
-
-                    <div class="circle">
-    <div style="color:grey;font-size:14px" class="text">09:30 PM</div>
-  </div>
-                    <div style="margin-left:80px; margin-top:-86px;">
-                    <p style="font-size:20px;color:blue">Superhero Theme Party</p>
-                    <p style="margin-top:-14px">09:30 PM to 11:30 PM</p>
-                    <p style="margin-top:-14px">Co03 lounge</p>
-                    </div>
-
-                    <div class="circle">
-    <div style="color:grey;font-size:14px" class="text">12:00 AM</div>
-  </div>
-                    <div style="margin-left:80px; margin-top:-86px;">
-                    <p style="font-size:20px;color:blue">SV 2 Stayzilla Campsite</p>
-                    <p style="margin-top:-14px">12:00 AM to 04:00 AM</p>
-                    <p style="margin-top:-14px">SV2 old Football field</p>
-                    </div>
-
+</div>
                 <div class="item item-divider">
                     Day 2 - Sat, 19th Dec
                 </div>
                 <!-- <h4 class="content padding double-padding-x positive">19th December</h4> -->
+               <div class="item">
                 <div class="circle">
-    <div style="color:grey;font-size:14px" class="text">07:00 AM</div>
+    <div style="color:grey;font-size:12px" class="text">07:00 AM</div>
   </div>
-                    <div style="margin-left:80px; margin-top:-86px;">
+                    <div style="margin-left:70px; margin-top:-60px">
                     <p style="font-size:20px;color:blue">Breakfast</p>
-                    <p style="margin-top:-14px">07:00 AM to 09:00 AM</p>
-                    <p style="margin-top:-14px">Atrium</p>
+                    <p style="margin-top:-6px">07:00 AM to 09:00 AM</p>
+                    <p style="margin-top:-12px">Atrium</p>
                     </div>
-
+</div>
+<div class="item">
                 <div class="circle">
-    <div style="color:grey;font-size:14px" class="text">09:30 AM</div>
+    <div style="color:grey;font-size:12px" class="text">09:30 AM</div>
   </div>
-                    <div style="margin-left:80px; margin-top:-86px;">
+                    <div style="margin-left:70px; margin-top:-60px">
                     <p style="font-size:20px;color:blue">Management Meet</p>
-                    <p style="margin-top:-14px">09:30 AM to 11:00 AM</p>
-                    <p style="margin-top:-14px">Co'11</p>
+                    <p style="margin-top:-6px">09:30 AM to 11:00 AM</p>
+                    <p style="margin-top:-12px">Co'11</p>
                     </div>
-
+</div>
+<div class="item">
                 <div class="circle">
-    <div style="color:grey;font-size:14px" class="text">10:00 AM</div>
+    <div style="color:grey;font-size:12px" class="text">10:00 AM</div>
   </div>
-                    <div style="margin-left:80px; margin-top:-86px;">
+                    <div style="margin-left:70px; margin-top:-60px">
                     <p style="font-size:20px;color:blue">Shiamak Aqua Dance Workshop</p>
-                    <p style="margin-top:-14px">10:00 AM to 12:00 PM</p>
-                    <p style="margin-top:-14px">Pool</p>
+                    <p style="margin-top:-6px">10:00 AM to 12:00 PM</p>
+                    <p style="margin-top:-12px">Pool</p>
                     </div>
-
+</div>
+<div class="item">
                 <div class="circle">
-    <div style="color:grey;font-size:14px" class="text">09:30 AM</div>
+    <div style="color:grey;font-size:12px" class="text">09:30 AM</div>
   </div>
-                    <div style="margin-left:80px; margin-top:-86px;">
+                    <div style="margin-left:70px; margin-top:-60px">
                     <p style="font-size:20px;color:blue">ISB Tour</p>
-                    <p style="margin-top:-14px">09:30 AM to 11:00 AM</p>
-                    <p style="margin-top:-14px">ISB Tour</p>
+                    <p style="margin-top:-6px">09:30 AM to 11:00 AM</p>
+                    <p style="margin-top:-12px">ISB Tour</p>
                     </div>
-
+</div>
+<div class="item">
                 <div class="circle">
-    <div style="color:grey;font-size:14px" class="text">09:30 AM</div>
+    <div style="color:grey;font-size:12px" class="text">09:30 AM</div>
   </div>
-                    <div style="margin-left:80px; margin-top:-86px;">
+                    <div style="margin-left:70px; margin-top:-60px">
                     <p style="font-size:20px;color:blue">Sports Meet</p>
-                    <p style="margin-top:-14px">09:30 AM to 12:00 PM</p>
-                    <p style="margin-top:-14px">Sports Meet</p>
+                    <p style="margin-top:-6px">09:30 AM to 12:00 PM</p>
+                    <p style="margin-top:-12px">Sports Meet</p>
                     </div>
-
+</div>
+<div class="item">
                 <div class="circle">
-    <div style="color:grey;font-size:14px" class="text">11:30 AM</div>
+    <div style="color:grey;font-size:12px" class="text">11:30 AM</div>
   </div>
-                    <div style="margin-left:80px; margin-top:-86px;">
+                    <div style="margin-left:70px; margin-top:-60px">
                     <p style="font-size:20px;color:blue">Management Meet</p>
-                    <p style="margin-top:-14px">11:30 AM to 12:30 PM</p>
-                    <p style="margin-top:-14px">Management Meet</p>
+                    <p style="margin-top:-6px">11:30 AM to 12:30 PM</p>
+                    <p style="margin-top:-12px">Management Meet</p>
                     </div>
-
+</div>
+<div class="item">
                 <div class="circle">
-    <div style="color:grey;font-size:14px" class="text">11:00 AM</div>
+    <div style="color:grey;font-size:12px" class="text">11:00 AM</div>
   </div>
-                    <div style="margin-left:80px; margin-top:-86px;">
+                    <div style="margin-left:70px; margin-top:-60px">
                     <p style="font-size:20px;color:blue">Group Photo</p>
-                    <p style="margin-top:-14px">11:00 AM to 11:30 AM</p>
-                    <p style="margin-top:-14px">Co06 and Co11</p>
+                    <p style="margin-top:-6px">11:00 AM to 11:30 AM</p>
+                    <p style="margin-top:-12px">Co06 and Co11</p>
                     </div>
-
+</div>
+<div class="item">
                 <div class="circle">
-    <div style="color:grey;font-size:14px" class="text">11:00 AM</div>
+    <div style="color:grey;font-size:12px" class="text">11:00 AM</div>
   </div>
-                    <div style="margin-left:80px; margin-top:-86px;">
+                    <div style="margin-left:70px; margin-top:-60px">
                     <p style="font-size:20px;color:blue">Wine Tasting</p>
-                    <p style="margin-top:-14px">11:00 AM to 12:30 AM</p>
-                    <p style="margin-top:-14px">By Grovers Wine</p>
+                    <p style="margin-top:-6px">11:00 AM to 12:30 AM</p>
+                    <p style="margin-top:-12px">By Grovers Wine</p>
                     </div>
-
+</div>
+<div class="item">
                 <div class="circle">
-    <div style="color:grey;font-size:14px" class="text">12:30 PM</div>
+    <div style="color:grey;font-size:12px" class="text">12:30 PM</div>
   </div>
-                    <div style="margin-left:80px; margin-top:-86px;">
+                    <div style="margin-left:70px; margin-top:-60px">
                     <p style="font-size:20px;color:blue">Lunch</p>
-                    <p style="margin-top:-14px">12:30 PM to 02:00 PM</p>
-                    <p style="margin-top:-14px">Atrium</p>
+                    <p style="margin-top:-6px">12:30 PM to 02:00 PM</p>
+                    <p style="margin-top:-12px">Atrium</p>
                     </div>
-
+</div>
+<div class="item">
                 <div class="circle">
-    <div style="color:grey;font-size:14px" class="text">12:30 PM</div>
+    <div style="color:grey;font-size:12px" class="text">12:30 PM</div>
   </div>
-                    <div style="margin-left:80px; margin-top:-86px;">
+                    <div style="margin-left:70px; margin-top:-60px">
                     <p style="font-size:20px;color:blue">Cooking Competition</p>
-                    <p style="margin-top:-14px">12:30 PM to 02:00 PM</p>
-                    <p style="margin-top:-14px">Atrium</p>
+                    <p style="margin-top:-6px">12:30 PM to 02:00 PM</p>
+                    <p style="margin-top:-12px">Atrium</p>
                     </div>
-
+</div>
+<div class="item">
                 <div class="circle">
-    <div style="color:grey;font-size:14px" class="text">02:00 PM</div>
+    <div style="color:grey;font-size:12px" class="text">02:00 PM</div>
   </div>
-                    <div style="margin-left:80px; margin-top:-86px;">
+                    <div style="margin-left:70px; margin-top:-60px">
                     <p style="font-size:20px;color:blue">Poker Tournament</p>
-                    <p style="margin-top:-14px">02:00 PM to 05:00 PM</p>
-                    <p style="margin-top:-14px">Yoga Room</p>
+                    <p style="margin-top:-6px">02:00 PM to 05:00 PM</p>
+                    <p style="margin-top:-12px">Yoga Room</p>
                     </div>
-
+</div>
+<div class="item">
                     <div class="circle">
-    <div style="color:grey;font-size:14px" class="text">02:00 PM</div>
+    <div style="color:grey;font-size:12px" class="text">02:00 PM</div>
   </div>
-                    <div style="margin-left:80px; margin-top:-86px;">
+                    <div style="margin-left:70px; margin-top:-60px">
                     <p style="font-size:20px;color:blue">Movie Screening</p>
-                    <p style="margin-top:-14px">02:00 PM to 04:30 PM</p>
-                    <p style="margin-top:-14px">Andaz Apna Apna</p>
+                    <p style="margin-top:-6px">02:00 PM to 04:30 PM</p>
+                    <p style="margin-top:-12px">Andaz Apna Apna</p>
                     </div>
-
+</div>
+<div class="item">
                     <div class="circle">
-    <div style="color:grey;font-size:14px" class="text">02:00 PM</div>
+    <div style="color:grey;font-size:12px" class="text">02:00 PM</div>
   </div>
-                    <div style="margin-left:80px; margin-top:-86px;">
+                    <div style="margin-left:70px; margin-top:-60px">
                     <p style="font-size:20px;color:blue">Cocktail Making</p>
-                    <p style="margin-top:-14px">02:00 PM to 02:30 PM</p>
-                    <p style="margin-top:-14px">Mixology Session</p>
+                    <p style="margin-top:-6px">02:00 PM to 02:30 PM</p>
+                    <p style="margin-top:-12px">Mixology Session</p>
                     </div>
-
+</div>
+<div class="item">
                     <div class="circle">
-    <div style="color:grey;font-size:14px" class="text">02:30 PM</div>
+    <div style="color:grey;font-size:12px" class="text">02:30 PM</div>
   </div>
-                    <div style="margin-left:80px; margin-top:-86px;">
+                    <div style="margin-left:70px; margin-top:-60px">
                     <p style="font-size:20px;color:blue">Shiamak Aqua Dance Workshop</p>
-                    <p style="margin-top:-14px">02:30 PM to 04:30 PM</p>
-                    <p style="margin-top:-14px">Swimming Pool</p>
+                    <p style="margin-top:-6px">02:30 PM to 04:30 PM</p>
+                    <p style="margin-top:-12px">Swimming Pool</p>
                     </div>
-
+</div>
+<div class="item">
                     <div class="circle">
-    <div style="color:grey;font-size:14px" class="text">02:00 PM</div>
+    <div style="color:grey;font-size:12px" class="text">02:00 PM</div>
   </div>
-                    <div style="margin-left:80px; margin-top:-86px;">
+                    <div style="margin-left:70px; margin-top:-60px">
                     <p style="font-size:20px;color:blue">Mid Term Mock Exam</p>
-                    <p style="margin-top:-14px">02:00 PM to 04:30 PM</p>
-                    <p style="margin-top:-14px">Online(if we can do this))</p>
+                    <p style="margin-top:-6px">02:00 PM to 04:30 PM</p>
+                    <p style="margin-top:-12px">Online(if we can do this))</p>
                     </div>
-
+</div>
+<div class="item">
                     <div class="circle">
-    <div style="color:grey;font-size:14px" class="text">02:00 PM</div>
+    <div style="color:grey;font-size:12px" class="text">02:00 PM</div>
   </div>
-                    <div style="margin-left:80px; margin-top:-86px;">
+                    <div style="margin-left:70px; margin-top:-60px">
                     <p style="font-size:20px;color:blue">Informal Networking</p>
-                    <p style="margin-top:-14px">02:00 PM to 04:30 PM</p>
-                    <p style="margin-top:-14px">Alum gyaan</p>
+                    <p style="margin-top:-6px">02:00 PM to 04:30 PM</p>
+                    <p style="margin-top:-12px">Alum gyaan</p>
                     </div>
-
+</div>
+<div class="item">
                     <div class="circle">
-    <div style="color:grey;font-size:14px" class="text">02:00 PM</div>
+    <div style="color:grey;font-size:12px" class="text">02:00 PM</div>
   </div>
-                    <div style="margin-left:80px; margin-top:-86px;">
+                    <div style="margin-left:70px; margin-top:-60px">
                     <p style="font-size:20px;color:blue">Kiddie Sports(hhopla,snake race etc.)</p>
-                    <p style="margin-top:-14px">02:00 PM to 07:00 PM</p>
-                    <p style="margin-top:-14px">Approach Hopscotch</p>
+                    <p style="margin-top:-6px">02:00 PM to 07:00 PM</p>
+                    <p style="margin-top:-12px">Approach Hopscotch</p>
                     </div>
-
+</div>
+<div class="item">
                     <div class="circle">
-    <div style="color:grey;font-size:14px" class="text">04:30 PM</div>
+    <div style="color:grey;font-size:12px" class="text">04:30 PM</div>
   </div>
-                    <div style="margin-left:80px; margin-top:-86px;">
+                    <div style="margin-left:70px; margin-top:-60px">
                     <p style="font-size:20px;color:blue">Keynote Speaker Session</p>
-                    <p style="margin-top:-14px">04:30 PM to 07:00 PM</p>
-                    <p style="margin-top:-14px">Khemka(mostly Anurag Kashyap)</p>
+                    <p style="margin-top:-6px">04:30 PM to 07:00 PM</p>
+                    <p style="margin-top:-12px">Khemka(mostly Anurag Kashyap)</p>
                     </div>
-
+</div>
+<div class="item">
                     <div class="circle">
-    <div style="color:grey;font-size:14px" class="text">07:30 PM</div>
+    <div style="color:grey;font-size:12px" class="text">07:30 PM</div>
   </div>
-                    <div style="margin-left:80px; margin-top:-86px;">
+                    <div style="margin-left:70px; margin-top:-60px">
                     <p style="font-size:20px;color:blue">Avenger Hunt</p>
-                    <p style="margin-top:-14px">07:30 PM to 08:30 PM</p>
-                    <p style="margin-top:-14px">(maybe scrapped))</p>
+                    <p style="margin-top:-6px">07:30 PM to 08:30 PM</p>
+                    <p style="margin-top:-12px">(maybe scrapped))</p>
                     </div>
-
+</div>
+<div class="item">
                     <div class="circle">
-    <div style="color:grey;font-size:14px" class="text">07:30 PM</div>
+    <div style="color:grey;font-size:12px" class="text">07:30 PM</div>
   </div>
-                    <div style="margin-left:80px; margin-top:-86px;">
+                    <div style="margin-left:70px; margin-top:-60px">
                     <p style="font-size:20px;color:blue">Dean's Dinner</p>
-                    <p style="margin-top:-14px">07:30 PM to 09:00 PM</p>
-                    <p style="margin-top:-14px">EH lawns-British Embassy sponsored</p>
+                    <p style="margin-top:-6px">07:30 PM to 09:00 PM</p>
+                    <p style="margin-top:-12px">EH lawns-British Embassy sponsored</p>
                     </div>
-
+</div>
+<div class="item">
                     <div class="circle">
-    <div style="color:grey;font-size:14px" class="text">07:30 PM</div>
+    <div style="color:grey;font-size:12px" class="text">07:30 PM</div>
   </div>
-                    <div style="margin-left:80px; margin-top:-86px;">
+                    <div style="margin-left:70px; margin-top:-60px">
                     <p style="font-size:20px;color:blue">Salsa/Bachata class</p>
-                    <p style="margin-top:-14px">07:30 PM to 08:00 PM</p>
-                    <p style="margin-top:-14px">Bollywood class</p>
+                    <p style="margin-top:-6px">07:30 PM to 08:00 PM</p>
+                    <p style="margin-top:-12px">Bollywood class</p>
                     </div>
-
+</div>
+<div class="item">
                     <div class="circle">
-    <div style="color:grey;font-size:14px" class="text">09:30 PM</div>
+    <div style="color:grey;font-size:12px" class="text">09:30 PM</div>
   </div>
-                    <div style="margin-left:80px; margin-top:-86px;">
+                    <div style="margin-left:70px; margin-top:-60px">
                     <p style="font-size:20px;color:blue">Band Rec</p>
-                    <p style="margin-top:-14px">09:30 PM to 10:00 PM</p>
-                    <p style="margin-top:-14px">Co06/Co11 centre</p>
+                    <p style="margin-top:-6px">09:30 PM to 10:00 PM</p>
+                    <p style="margin-top:-12px">Co06/Co11 centre</p>
                     </div>
-
+</div>
+<div class="item">
                     <div class="circle">
-    <div style="color:grey;font-size:14px" class="text">09:00 PM</div>
+    <div style="color:grey;font-size:12px" class="text">09:00 PM</div>
   </div>
-                    <div style="margin-left:80px; margin-top:-86px;">
+                    <div style="margin-left:70px; margin-top:-60px">
                     <p style="font-size:20px;color:blue">Band Rec</p>
-                    <p style="margin-top:-14px">09:00 PM to 09:30 PM</p>
-                    <p style="margin-top:-14px">Co16 centre</p>
+                    <p style="margin-top:-6px">09:00 PM to 09:30 PM</p>
+                    <p style="margin-top:-12px">Co16 centre</p>
                     </div>
-
+</div>
+<div class="item">
                     <div class="circle">
-    <div style="color:grey;font-size:14px" class="text">10:00 PM</div>
+    <div style="color:grey;font-size:12px" class="text">10:00 PM</div>
   </div>
-                    <div style="margin-left:80px; margin-top:-86px;">
+                    <div style="margin-left:70px; margin-top:-60px">
                     <p style="font-size:20px;color:blue">Live act at Rec centre</p>
-                    <p style="margin-top:-14px">10:00 PM to 12:00 AM</p>
-                    <p style="margin-top:-14px">Coke Studio's Clinton Cerejo</p>
+                    <p style="margin-top:-6px">10:00 PM to 12:00 AM</p>
+                    <p style="margin-top:-12px">Coke Studio's Clinton Cerejo</p>
                     </div>
-
+</div>
+<div class="item">
                     <div class="circle">
-    <div style="color:grey;font-size:14px" class="text">12:00 AM</div>
+    <div style="color:grey;font-size:12px" class="text">12:00 AM</div>
   </div>
-                    <div style="margin-left:80px; margin-top:-86px;">
+                    <div style="margin-left:70px; margin-top:-60px">
                     <p style="font-size:20px;color:blue">SV 2 Stayzilla Campsite at SV2 old Football field</p>
-                    <p style="margin-top:-14px">12:00 AM to 04:00 AM</p>
-                    <p style="margin-top:-14px">Bollywood Theme Party at Recreation centre</p>
+                    <p style="margin-top:-6px">12:00 AM to 04:00 AM</p>
+                    <p style="margin-top:-12px">Bollywood Theme Party at Recreation centre</p>
                     </div>
-
+</div>
                 <div class="item item-divider">
                     Day 3 - Sun, 20th Dec
                 </div>
+                <div class="item">
                 <!-- <h4 class="content padding double-padding-x positive">20th December</h4> -->
                 <div class="circle">
-    <div style="color:grey;font-size:14px" class="text">07:00 AM</div>
+    <div style="color:grey;font-size:12px" class="text">07:00 AM</div>
   </div>
-                    <div style="margin-left:80px; margin-top:-86px;">
+                    <div style="margin-left:70px; margin-top:-60px">
                     <p style="font-size:20px;color:blue">Breakfast</p>
-                    <p style="margin-top:-14px">07:00 AM to 09:00 AM</p>
-                    <p style="margin-top:-14px">Atrium</p>
+                    <p style="margin-top:-6px">07:00 AM to 09:00 AM</p>
+                    <p style="margin-top:-12px">Atrium</p>
                     </div>
-
-
+</div>
+<div class="item">
                 <div class="circle">
-    <div style="color:grey;font-size:14px" class="text">10:00 AM</div>
+    <div style="color:grey;font-size:12px" class="text">10:00 AM</div>
   </div>
-                    <div style="margin-left:80px; margin-top:-86px;">
+                    <div style="margin-left:70px; margin-top:-60px">
                     <p style="font-size:20px;color:blue">Brunch</p>
-                    <p style="margin-top:-14px">10:00 AM to 03:00 PM</p>
-                    <p style="margin-top:-14px">Brunch</p>
+                    <p style="margin-top:-6px">10:00 AM to 03:00 PM</p>
+                    <p style="margin-top:-12px">Brunch</p>
                     </div>
+                </div>
 
         </div>
-    </ion-content>
-</ion-view>
+    </ion-scroll>
+  </body>
+
+</html>
+   
+    
+

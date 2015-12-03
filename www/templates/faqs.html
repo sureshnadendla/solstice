@@ -1,18 +1,31 @@
-<ion-view view-title="FAQs">
-    <ion-content ng-class="{expanded:isExpanded}">
-        <div class="content">
-            <div class="list animate-fade-slide-in-right">
-                <ion-list>
-                    <div ng-repeat="group in groups">
-                        <ion-item class="item-stable" ng-click="toggleGroup(group)" ng-class="{active: isGroupShown(group)}">
-                            <i class="icon" ng-class="isGroupShown(group) ? 'ion-minus' : 'ion-plus'"></i> &nbsp; <!-- {{group.name}} -->
-                        </ion-item>
-                        <ion-item class="item-accordion" ng-repeat="item in group.items" ng-show="isGroupShown(group)">
-                            {{item}}
-                        </ion-item>
-                    </div>
-                </ion-list>
-            </div>
-        </div>
-    </ion-content>
-</ion-view>
+
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link rel="stylesheet" href="http://code.ionicframework.com/1.0.0-beta.1/css/ionic.css" />
+    <script src="http://code.ionicframework.com/1.0.0-beta.1/js/ionic.bundle.js"></script>
+    <script>
+      angular.module('ionicApp', ['ionic'])
+    </script>
+  </head>
+  <body ng-app="ionicApp">
+    <div class="bar bar-header bar-assertive">
+  <h1 class="title">Frequently Asked Questions</h1>
+</div>
+<div class="bar bar-subheader">
+  <h2 class="title">Registration</h2>
+</div>
+<ion-scroll direction="xy">
+<div class="list">
+    <div class="item" style="margin-top:80px">
+    <a class="button icon-right ion-chevron-right button-calm">How much is the registration fee?</a>
+</div>
+</div>
+    </ion-scroll>
+  </body>
+</html>
+   
+    
+
+
