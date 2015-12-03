@@ -29,26 +29,26 @@ angular.module('starter', ['ionic', 'starter.controllers'])
   // Learn more here: https://github.com/angular-ui/ui-router
   // Set up the various states which the app can be in.
   // Each state's controller can be found in controllers.js
-  
+  $stateProvider
 
   // setup an abstract state for the tabs directive
-    $stateProvider.state('app', {
+    .state('app', {
     url: '/app',
-    abstract: true,
+    //abstract: true,
     templateUrl: 'templates/tab-dash.html'
   })
 
   // Each tab has its own nav history stack:
 
-  .state('app.event', {
-    url: '/event',
-    views: {
-      'app-event': {
-        templateUrl: 'templates/event.html',
-        controller: 'EventCtrl'
-      }
-    }
-  })
+  // .state('app.event', {
+  //   url: '/event',
+  //   views: {
+  //     'app-event': {
+  //       templateUrl: 'templates/event_breif.html',
+  //      // controller: 'DashCtrl'
+  //     }
+  //   }
+  // })
   // .state('tab.chats', {
   //     url: '/chats',
   //     views: {
