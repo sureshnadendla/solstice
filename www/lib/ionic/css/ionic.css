@@ -9292,3 +9292,10 @@ a.button {
   opacity: 0;
   -webkit-transition-duration: 0s;
   transition-duration: 0s; }
+
+.rightbar{
+      height: 60px;
+    position: absolute;
+    border-right: 1px solid grey;
+    padding-right: 100px;
+}
