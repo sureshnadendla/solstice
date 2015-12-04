@@ -38,6 +38,8 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     templateUrl: 'templates/tab-dash.html'
   })
 
+    
+
   // Each tab has its own nav history stack:
 
   // .state('app.event', {
