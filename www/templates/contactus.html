@@ -1,39 +1,34 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <link href="../lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
     <script src="../lib/ionic/js/ionic.bundle.js"></script>
     <script>
-      angular.module('ionicApp', ['ionic'])
+    angular.module('ionicApp', ['ionic'])
     </script>
-  </head>
+</head>
 <body ng-app="ionicApp">
-<div class="bar bar-header bar-assertive">
-  <h1 class="title">Contact Us</h1>
+    <div class="bar bar-header bar-assertive">
+      <h1 class="title">Contact Us</h1>
+  </div style = "margin: 10px;">
+  <ion-view style="margin-top:40px">
+  <div class="rowcc responsive-lg responsive-sm">
+  <img style="width:100%; height:260px; overflow: hidden;" ng-src="../img/solstice.png">
+ </div>
+ <div style = "font-size: 22px; margin-left:10px; margin-top:25px">Connect With Us</div></br>
+  <span style = "font-size: 17px; margin:10px"><u>Hyderabad Campus:</u></span>
+  <div style="margin-top:30px; margin-left:10px">   
+  <b>Akanksha Bhosle</b> </br>
+  <span style="font-style:italic; color: grey">email:</span><a> akanksha_bhosle2016@isb.edu</a></br>
+  <b>Raghav Bhagra</b> </br>
+  <span style="font-style:italic; color: grey">email:</span><a>raghav_bhagra2016@isb.edu</a></br>
 </div>
-
-<ion-view view-title="Contact Us ">
-    <ion-content ng-class="{expanded:$scope.isExpanded}">
-        <div class="hero slide-up" style="background-image: url('img/Picture1.png');">
-            <div class="content">
-            </div>
-        </div>
-        <h4 class="content padding double-padding-x">Connect with us</h4>
-        <div class="list animate-fade-slide-in-right">
-            <div class="content padding double-padding-x" style="margin-top:-25px;">
-                <span style="text-decoration: underline">Hyderabad Campus:</span> </br>
-                </br>
-                <b>Akanksha Bhosle</b> </br>
-                <span style="font-style:italic; color: grey">email:</span> akanksha_bhosle2016@isb.edu</br>
-                <b>Raghav Bhagra</b> </br>
-                <span style="font-style:italic; color: grey">email:</span> raghav_bhagra2016@isb.edu</br>
-                </br>
-                <span style="font-style:italic; color: grey">Website:</span> <a href="http://www.isb.edu/solstice">http://www.isb.edu/solstice</a></br>
-                <span style="font-style:italic; color: grey">Facebook:</span> Coming Soon</br>
-                <span style="font-style:italic; color: grey">Twitter:</span> <a href="https://twitter.com/lifeatisb">https://twitter.com/lifeatisb</a>
-            </div>
-        </div>
-    </ion-content>
+<div style="margin-top:20px; margin-left:10px">
+  <span style="font-style:italic; color: grey">Website:</span><a href="#" onclick="window.open('http://www.isb.edu/solstice', '_system', 'location=yes'); return false;">http://www.isb.edu/solstice</a></br>
+  <span style="font-style:italic; color: grey">Facebook:</span><a href="https://www.facebook.com/events/899556553462098/">https://www.facebook.com/events/</a></br>
+  <span style="font-style:italic; color: grey">Twitter:</span><a href="https://twitter.com/lifeatisb">https://twitter.com/lifeatisb</a>
+  </div>
 </ion-view>
 </body>
 </html>
