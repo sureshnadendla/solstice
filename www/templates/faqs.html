@@ -22,38 +22,17 @@
 <ion-scroll direction="y">
 
 <ion-list style="margin-top:84px" >
-<div  ng-repeat="group in groups">
-<ion-item
-                  item="item"
-                  href="Answer.html" class="item-remove-animate">
-          {{group.name}}
+<div ng-repeat="group in groups">
+<ion-item ng-click="toggleGroup(group)" ng-class="{active: isGroupShown(group)}"
+                  class="item-remove-animate">
+                  <i class="icon" ng-class="isGroupShown(group) ? 'ion-minus' : 'ion-plus'"></i>
+          Q: {{group.name}}
         </ion-item>
+        <ion-item style="color:blue;margin-left:20px" class="item-accordion" ng-repeat="item in group.items" ng-show="isGroupShown(group)"> 
+                            Ans: {{item}}
+                        </ion-item>
         </div>
 </ion-list>
-
-<!-- <div class="list">
-    <a class="item" style="margin-top:80px;" type="item-text-wrap" style="Font-size:30px" class="button button-clear icon-right ion-chevron-right">How much is the registration fee?</a>
-    <a class="item" style="margin-top:0px;" type="item-text-wrap" style="Font-size:30px" class="button button-clear icon-right ion-chevron-right">What all do I get as part of the registration?</a>
-    <a class="item" style="margin-top:0px;"type="item-text-wrap" style="Font-size:30px" class="button button-clear icon-right ion-chevron-right">Are accommodation charges different from the<br> registration charge?</a>
-    <a class="item" style="margin-top:0px;"type="item-text-wrap" style="Font-size:30px" class="button button-clear icon-right ion-chevron-right">I can come only during day 2 of Solstice. Do I still<br> need to pay the entire registration fee?</a>
-    <a class="item" style="margin-top:0px;"type="item-text-wrap" style="Font-size:30px" class="button button-clear icon-right ion-chevron-right">What is the fee for on-the-spot registration?</a>
-    <a class="item" style="margin-top:0px;"type="item-text-wrap" style="Font-size:30px" class="button button-clear icon-right ion-chevron-right">How many of my class mates are coming?</a>
-    <a class="item" style="margin-top:0px;"type="item-text-wrap" style="Font-size:30px" class="button button-clear icon-right ion-chevron-right">What if I have been overcharged for my <br> accomodation?</a>
-    <a class="item" style="margin-top:0px;"type="item-text-wrap" style="Font-size:30px" class="button button-clear icon-right ion-chevron-right">Can I get my friends who are not alumni of the school<br> for Solstice?</a>
-    <a class="item" style="margin-top:0px;"type="item-text-wrap" style="Font-size:30px" class="button button-clear icon-right ion-chevron-right">Who is the key note speaker?</a>
-    <a class="item" style="margin-top:0px;"type="item-text-wrap" style="Font-size:30px" class="button button-clear icon-right ion-chevron-right">Which band is playing?</a>
-    <a class="item" style="margin-top:0px" style="Font-size:30px" class="button button-clear icon-right ion-chevron-right">Are there any activities/events for my spouse/kids?</a>
-    <a class="item" style="margin-top:0px;"type="item-text-wrap" style="Font-size:30px" class="button button-clear icon-right ion-chevron-right">I do not drink, which events/activities will be of <br> interest to me?</a>
-    <a class="item" style="margin-top:0px;"type="item-text-wrap" style="Font-size:30px" class="button button-clear icon-right ion-chevron-right">None of the events interests me, why should I come?</a>
-    <a class="item" style="margin-top:0px;"type="item-text-wrap" style="Font-size:30px" class="button button-clear icon-right ion-chevron-right">Can I get accommodation in campus?<br> (EH, studio, quad?)</a>
-    <a class="item" style="margin-top:0px;"type="item-text-wrap" style="Font-size:30px" class="button button-clear icon-right ion-chevron-right">How many people can stay in a quad room?</a>
-    <a class="item" style="margin-top:0px;"type="item-text-wrap" style="Font-size:30px" class="button button-clear icon-right ion-chevron-right">What are the tarrifs for the same?</a>
-    <a class="item" style="margin-top:0px;"type="item-text-wrap" style="Font-size:30px" class="button button-clear icon-right ion-chevron-right">My friend and I have registered separately. <br>Can we be put in adjacent rooms?</a>
-    <a class="item" style="margin-top:0px;"type="item-text-wrap" style="Font-size:30px" class="button button-clear icon-right ion-chevron-right">Can the outside guests be accommodated in the <br>campus itself?</a>
-    <a class="item" style="margin-top:0px;"type="item-text-wrap" style="Font-size:30px" class="button button-clear icon-right ion-chevron-right">What are the alternate accommodation arrangements <br>in case I do not accommodation in campus?</a>
-    <a class="item" style="margin-top:0px;"type="item-text-wrap" style="Font-size:30px" class="button button-clear icon-right ion-chevron-right">Logistics and travel partners?</a>
-    <a class="item" style="margin-top:0px;"type="item-text-wrap" style="fornt-size:30px" class="button button-clear icon-right ion-chevron-right">What are the hotel tariffs?</a>
-</div> -->
     </ion-scroll>
 </ion-content>
   </body>
