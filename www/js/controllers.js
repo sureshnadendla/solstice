@@ -1,28 +1,35 @@
 angular.module('starter.controllers', [])
 
+
+   .controller('TestCtrl', ['$scope',function($scope) {
+
+   $scope.clicked = function(){
+        alert("Clicked");
+    }
+}]);
 .controller('MyCtrl', function($scope) {
   
   
   $scope.quetions = [
      'How much is the registration fee?',
-     'What all I get as part of the registration?',
+     'What all do I get as part of the registration?',
      'Are accommodation charges different from the registration charge?',
      'I can come only during day 2 of Solstice. Do I still need to pay the entire registration fee?',
-     'What is the fee onthe spot registration?',
-     'How many of my mates are coming?',
-     'What I have been overcharged my accomodation?',
-     'Can I get my friends who are not alumni of the school Solstice?',
+     'What is the fee for on-the-spot registration?',
+     'How many of my class mates are coming?',
+     'What if I have been overcharged for my accomodation?',
+     'Can I get my friends who are not alumni of the school for Solstice?',
      'Who is the key note speaker?',
      'Which band is playing?',
-     'Are there any activities/events my spouse/kids?',
-     'I not drink, which events/activities will be of interest to me?',
+     'Are there any activities/events for my spouse/kids?',
+     'I do not drink, which events/activities will be of interest to me?',
      'None of the events interests me, why should I come?',
-     'Can I get accommodation campus? (EH, studio, quad?)',
-     'How many people can stay a quad room?',
-     'What are the tarrifs the same?',
-     'My friend and I have registered separately. Can we be put adjacent rooms?',
-     'Can the outside guests be accommodated the campus itself?',
-     'What are the alternate accommodation arrangements I not accommodation campus?',
+     'Can I get accommodation in campus? (EH, studio, quad?)',
+     'How many people can stay in a quad room?',
+     'What are the tarrifs for the same?',
+     'My friend and I have registered separately. Can we be put in adjacent rooms?',
+     'Can the outside guests be accommodated in the campus itself?',
+     'What are the alternate accommodation arrangements in case I do not accommodation in campus?',
      'Logistics and travel partners?',
      'What are the hotel tariffs?'
   ]
@@ -37,7 +44,7 @@ angular.module('starter.controllers', [])
                         'Solstice is an alumni event only for ISB students so unfortunately it is meant only for ISB students and their spouses, parents & kids.',
                         'We are still deciding on the key note speaker. Last year we had Shashi Tharoor so it would be somebody of his stature.',
                         'We are in talks with the guys from Coke Studio – the flavor of the current season.',
-                        'Ofcourse! Like mentioned earlier, Solstice is for ISB students families, so there would be events for kids and spouses. Not to worry!',
+                        'Of course! Like mentioned earlier, Solstice is for ISB students families, so there would be events for kids and spouses. Not to worry!',
                         'Plenty of events. You were part of ISB so you know Solstice is more than alcohol! We have band performances, networking sessions, key note speaker sessions, Deans dinner, stand up comedy, treasure hunt, sports.',
                         'Its Solstice! You get to meet your classmates, professors, the Dean and the new Dean, current class and AIKYA families. The spirit of Solstice lies in connecting with your classmates and Alma mater after a really long time. Trust us and come for Solstice, you will not regret it!',
                         'Campus accommodation is available on first-come, first-serve basis. What are you waiting for? Sign up now.',
