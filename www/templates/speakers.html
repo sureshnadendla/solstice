@@ -11,16 +11,16 @@
   </head>
 <body>
 <div class="bar bar-header bar-assertive">
-  <h1 class="title">Nominate a Superhero from your class</h1>
+  <h1 class="title">Superhero</h1>
 </div>
-<ion-view>
+<!-- <ion-view>
 <ion-content>
 <div style="margin-top:250px">
   <label class="item-input">
     <span class="input-label">Name of Superhero</span>
     <input type="text" placeholder="Superhero Name">
   </label>
-  <label class="item-input item-select">
+  <label style="margin-top:30px" class="item-input item-select">
     <div class="input-label">
       Select a Year
     </div>
@@ -50,10 +50,55 @@
 </div>
 
 </ion-content>
-  <!-- <div class="row responsive-lg responsive-sm">
+   <div class="row responsive-lg responsive-sm">
    <img ng-src="../img/comingsoonimage.png" style = "margin-left:auto;margin-right:auto; margin-top: 200px;">
-  </div> -->
+  </div> 
+</ion-view> -->
+<ion-view view-title="Super Hero">
+    <ion-content>
+        <h4 style="margin-top:65px" >Nominate a super hero from your class.</h4>
+        <div style="margin-top:20px" class="list animate-fade-slide-in-right">
+            
+            
+        <div class="list">
+        
+          <label class="item item-input item-floating-label" style="margin-top:40px">
+            <div class="input-label">Name of Superhero</div>
+            <input type="text" style="margin-left:80px" placeholder="Name">
+          </label>
+
+          <label class="item item-input item-select ">
+            <div class="input-label">
+              Year
+            </div>
+            <select>
+              <option>2003</option>
+              <option>2004</option>
+              <option>2005</option>
+              <option>2006</option>
+              <option>2007</option>
+              <option>2008</option>
+              <option>2009</option>
+              <option>2010</option>
+              <option>2011</option>
+              <option>2012</option>
+              <option>2013</option>
+              <option>2014</option>
+              <option>2015</option>
+            </select>
+          </label>
+
+          <button class="button button-full button-positive" ng-click="clicked()">
+              Submit
+          </button>
+
+
+
+        </div>
+        </div>
+    </ion-content>
 </ion-view>
+
 </body>
 </html>
   

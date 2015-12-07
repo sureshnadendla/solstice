@@ -1,12 +1,7 @@
 angular.module('starter.controllers', [])
 
 
-   .controller('TestCtrl', ['$scope',function($scope) {
-
-   $scope.clicked = function(){
-        alert("Your Superhero successfully submitted.");
-    }
-}])
+   
 .controller('MyCtrl', function($scope) {
   
   
@@ -79,7 +74,14 @@ angular.module('starter.controllers', [])
   $scope.isGroupShown = function(group) {
     return $scope.shownGroup === group;
   };
-});
+})
+
+.controller('TestCtrl', ['$scope',function($scope) {
+
+   $scope.clicked = function(){
+        alert("Your Superhero successfully submitted.");
+    }
+}]);
 
 // .controller('ChatsCtrl', function($scope, Chats) {
 //   // With the new view caching in Ionic, Controllers are only called
