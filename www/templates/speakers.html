@@ -3,6 +3,8 @@
   <head>
   	<link href="../lib/ionic/css/ionic.css" rel="stylesheet">
     <script src="../lib/ionic/js/ionic.bundle.js"></script>
+    <script src="../js/app.js"></script>
+    <script src="../js/controllers.js"></script>
     <script>
       angular.module('ionicApp', ['ionic'])
     </script>
@@ -13,18 +15,18 @@
 </div>
 <ion-view>
 <ion-content>
-<div style="margin-top:250px" class="list">
-  <label class="item item-input">
+<div style="margin-top:250px">
+  <label class="item-input">
     <span class="input-label">Name of Superhero</span>
     <input type="text" placeholder="Name">
   </label>
-  <label class="item item-input item-select item-floating-label">
+  <label class="item-input item-select">
     <div class="input-label">
-      Year
+      Select a Year
     </div>
     <select style="border:none">
       <option>2003</option>
-      <option selected>2004</option>
+      <option>2004</option>
       <option>2005</option>
       <option>2006</option>
       <option>2007</option>
@@ -39,9 +41,9 @@
     </select>
   </label>
 </div>
-<div ng-app="starter">
+<div style="text-align:center;" ng-app="starter">
     <div ng-controller="TestCtrl">
-      <button class="button button-block button-positive" ng-click="clicked()">Submit</button>
+      <button style="width:300px" class="button button-positive" ng-click="clicked()">Submit</button>
     </div>
 </div>
 

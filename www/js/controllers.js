@@ -4,9 +4,9 @@ angular.module('starter.controllers', [])
    .controller('TestCtrl', ['$scope',function($scope) {
 
    $scope.clicked = function(){
-        alert("Clicked");
+        alert("Your Superhero successfully submitted.");
     }
-}]);
+}])
 .controller('MyCtrl', function($scope) {
   
   
