@@ -102,6 +102,7 @@ angular.module('starter.controllers', [])
   $scope.isGroupShown = function(group) {
     return $scope.shownGroup === group;
   };
+  $scope.myVariable = 'Hello, world!';
 })
 
 .controller('TestCtrl', ['$scope',function($scope) {

@@ -9,51 +9,10 @@
       angular.module('ionicApp', ['ionic'])
     </script>
   </head>
-<body>
+<body ng-app="starter" ng-controller="TestCtrl">
 <div class="bar bar-header bar-assertive">
   <h1 class="title">Superhero</h1>
 </div>
-<!-- <ion-view>
-<ion-content>
-<div style="margin-top:250px">
-  <label class="item-input">
-    <span class="input-label">Name of Superhero</span>
-    <input type="text" placeholder="Superhero Name">
-  </label>
-  <label style="margin-top:30px" class="item-input item-select">
-    <div class="input-label">
-      Select a Year
-    </div>
-    <div>
-    <select style="border:none">
-      <option>2003</option>
-      <option>2004</option>
-      <option>2005</option>
-      <option>2006</option>
-      <option>2007</option>
-      <option>2008</option>
-      <option>2009</option>
-      <option>2010</option>
-      <option>2011</option>
-      <option>2012</option>
-      <option>2013</option>
-      <option>2014</option>
-      <option>2015</option>
-    </select>
-  </div>
-  </label>
-</div>
-<div style="text-align:center;" ng-app="starter">
-    <div ng-controller="TestCtrl">
-      <button style="width:300px" class="button button-positive" ng-click="clicked()">Submit</button>
-    </div>
-</div>
-
-</ion-content>
-   <div class="row responsive-lg responsive-sm">
-   <img ng-src="../img/comingsoonimage.png" style = "margin-left:auto;margin-right:auto; margin-top: 200px;">
-  </div> 
-</ion-view> -->
 <ion-view view-title="Super Hero">
     <ion-content>
         <h4 style="margin-top:65px" >Nominate a super hero from your class.</h4>
@@ -67,12 +26,12 @@
             <input type="text" style="margin-left:80px" placeholder="Name">
           </label>
 
-          <label class="item item-input item-select ">
+          <ion-item class="item item-input item-select">
             <div class="input-label">
               Year
             </div>
             <select>
-              <option>2003</option>
+              <option selected>2003</option>
               <option>2004</option>
               <option>2005</option>
               <option>2006</option>
@@ -86,14 +45,11 @@
               <option>2014</option>
               <option>2015</option>
             </select>
-          </label>
+          </ion-item>
 
           <button class="button button-full button-positive" ng-click="clicked()">
               Submit
           </button>
-
-
-
         </div>
         </div>
     </ion-content>
