@@ -13,12 +13,14 @@ angular.module('starter.controllers', [])
      'What is the fee for on-the-spot registration?',
      'How many of my class mates are coming?',
      'What if I have been overcharged for my accomodation?',
-     'Can I get my friends who are not alumni of the school for Solstice?',
+     'Can I get my friends who are not alumni of the school for Solstice?']
+     $scope.quetionsEvents = [
      'Who is the key note speaker?',
      'Which band is playing?',
      'Are there any activities/events for my spouse/kids?',
      'I do not drink, which events/activities will be of interest to me?',
-     'None of the events interests me, why should I come?',
+     'None of the events interests me, why should I come?']
+     $scope.quetionsAccomodations = [
      'Can I get accommodation in campus? (EH, studio, quad?)',
      'How many people can stay in a quad room?',
      'What are the tarrifs for the same?',
@@ -36,12 +38,14 @@ angular.module('starter.controllers', [])
                         'Alum - 3,500 INR Spouse - 2,500 INR Significant other - 2,500 INR Child - 700 INR We provide concession for the Early-bird registrations',
                         'We would keep sharing the updated list with you',
                         'The Alumni office is ensuring that everyone is charged the right amount for accommodation (2 nights) and is personally getting in touch with every alumnus who has been overcharged. The refund process for the same will be initiated post Solstice.',
-                        'Solstice is an alumni event only for ISB students so unfortunately it is meant only for ISB students and their spouses, parents & kids.',
+                        'Solstice is an alumni event only for ISB students so unfortunately it is meant only for ISB students and their spouses, parents & kids.']
+                        $scope.Eventanswers = [
                         'We are still deciding on the key note speaker. Last year we had Shashi Tharoor so it would be somebody of his stature.',
                         'We are in talks with the guys from Coke Studio – the flavor of the current season.',
                         'Of course! Like mentioned earlier, Solstice is for ISB students families, so there would be events for kids and spouses. Not to worry!',
                         'Plenty of events. You were part of ISB so you know Solstice is more than alcohol! We have band performances, networking sessions, key note speaker sessions, Deans dinner, stand up comedy, treasure hunt, sports.',
-                        'Its Solstice! You get to meet your classmates, professors, the Dean and the new Dean, current class and AIKYA families. The spirit of Solstice lies in connecting with your classmates and Alma mater after a really long time. Trust us and come for Solstice, you will not regret it!',
+                        'Its Solstice! You get to meet your classmates, professors, the Dean and the new Dean, current class and AIKYA families. The spirit of Solstice lies in connecting with your classmates and Alma mater after a really long time. Trust us and come for Solstice, you will not regret it!']
+                        $scope.AccomodationAnswer = [
                         'Campus accommodation is available on first-come, first-serve basis. What are you waiting for? Sign up now.',
                         'Alumni can choose between a single quad or quad sharing with alum',
                         'Quad sharing with alum – 1500/day Single Quad – 3000/day',
@@ -53,7 +57,7 @@ angular.module('starter.controllers', [])
                         ];
 
                         $scope.groups = [];
-  for (var i=0; i<21; i++) {
+  for (var i=0; i<8; i++) {
     $scope.groups[i] = {
       name: $scope.quetions[i],
       items: []
@@ -62,6 +66,30 @@ angular.module('starter.controllers', [])
     for (var j=0; j<1; j++) {
       // $scope.groups[i].items.push(i + 'adsfasdfasdfasdfasdfasdf' + j);
       $scope.groups[i].items.push( $scope.answers[i] );
+    }
+  }
+  $scope.groups1 = [];
+  for (var i=0; i<5; i++) {
+    $scope.groups1[i] = {
+      name: $scope.quetionsEvents[i],
+      items: []
+    };
+    
+    for (var j=0; j<1; j++) {
+      // $scope.groups[i].items.push(i + 'adsfasdfasdfasdfasdfasdf' + j);
+      $scope.groups1[i].items.push( $scope.Eventanswers[i] );
+    }
+  }
+  $scope.groups2 = [];
+  for (var i=0; i<8; i++) {
+    $scope.groups2[i] = {
+      name: $scope.quetionsAccomodations[i],
+      items: []
+    };
+    
+    for (var j=0; j<1; j++) {
+      // $scope.groups[i].items.push(i + 'adsfasdfasdfasdfasdfasdf' + j);
+      $scope.groups2[i].items.push( $scope.AccomodationAnswer[i] );
     }
   }
   $scope.toggleGroup = function(group) {

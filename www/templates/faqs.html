@@ -15,12 +15,12 @@
     <div class="bar bar-header bar-assertive">
   <h1 class="title">Frequently Asked Questions</h1>
 </div>
-<div class="bar bar-subheader">
-  <h1 class="title">Registration</h1>
-</div>
 <ion-view>
-    <ion-content style="margin-top:80px">
+    <ion-content style="margin-top:40px">
 <ion-list>
+<div align="center" class="item-divider">
+  Registration
+</div>
 <div ng-repeat="group in groups">
 <ion-item ng-click="toggleGroup(group)" ng-class="{active: isGroupShown(group)}"
                   class="item-remove-animate item-text-wrap">
@@ -29,7 +29,32 @@
         <ion-item style="color:#004c66;margin-left:20px" class="item-accordion item-text-wrap" ng-repeat="item in group.items" ng-show="isGroupShown(group)"> 
                             {{item}}
                         </ion-item>
+                        
         </div>
+        <div  align="center" class="item-divider">
+  Events
+</div>
+<div ng-repeat="group in groups1">
+  <ion-item ng-click="toggleGroup(group)" ng-class="{active: isGroupShown(group)}"
+                  class="item-remove-animate item-text-wrap">
+          Q: {{group.name}}
+        </ion-item>
+        <ion-item style="color:#004c66;margin-left:20px" class="item-accordion item-text-wrap" ng-repeat="item in group.items" ng-show="isGroupShown(group)"> 
+                            {{item}}
+                        </ion-item>
+</div>
+<div  align="center" class="item-divider">
+  Accomodations
+</div>
+<div ng-repeat="group in groups2">
+  <ion-item ng-click="toggleGroup(group)" ng-class="{active: isGroupShown(group)}"
+                  class="item-remove-animate item-text-wrap">
+          Q: {{group.name}}
+        </ion-item>
+        <ion-item style="color:#004c66;margin-left:20px" class="item-accordion item-text-wrap" ng-repeat="item in group.items" ng-show="isGroupShown(group)"> 
+                            {{item}}
+                        </ion-item>
+</div>
 </ion-list>
     </ion-content>
   </ion-view>
