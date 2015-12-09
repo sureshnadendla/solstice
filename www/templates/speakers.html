@@ -20,9 +20,8 @@
       var No1 = document.getElementById('name').value;
         var No2 = document.getElementById('year').value;
 
-           var params = {name: No1, batch:No2}
       $.ajax({
-        url: "https://dweet.io/dweet/for/solstice2015superhero?" + No1 + "&" + No2,
+        url: "https://dweet.io/dweet/for/solstice2015superhero?" + "name=" + No1 + "&" + "batch=" + No2,
       type: "POST",
       dataType: 'json',
       crossDomain: true,
@@ -48,7 +47,7 @@
         <h4 style="margin-top:65px" >Nominate a super hero from your class.</h4>
         <div style="margin-top:20px" class="list animate-fade-slide-in-right">
         <div class="list">
-        <form target="fake-target" method="POST" onsubmit="custommsg(); return true;">
+        <form target="fake-target" method="POST" onsubmit="custommsg()">
           <label class="item item-input item-floating-label" style="margin-top:40px">
             <div class="input-label">Name of Superhero</div>
             <input id="name" required name="Name" type="text" placeholder="Name">
