@@ -5,11 +5,34 @@
     <script src="../lib/ionic/js/ionic.bundle.js"></script>
     <script src="../js/app.js"></script>
     <script src="../js/controllers.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <script>
       angular.module('ionicApp', ['ionic'])
     </script>
+    <script type="text/javascript">
+function custommsg() {
+  var first = document.getElementById("name").value;
+  $.ajax({
+                url: "https://docs.google.com/a/motifworks.com/forms/d/1VwxM9RVSCIneXFe5f1Cwg2_K6g2B9i5DcCvPLQPhUAE/formResponse",
+                data: { "Name": first,
+                 },
+                type: "POST",
+                dataType: 'xml',
+                crossDomain: true,
+                statusCode: {
+                0: function() {
+                    //Success message
+                },
+                200: function() {
+                    //Success Message
+                }
+            }
+            });
+            }
+</script>
   </head>
-<body ng-app="starter" ng-controller="TestCtrl">
+<body ng-app="starter" ng-controller="post">
 <div class="bar bar-header bar-assertive">
   <h1 class="title">Superhero</h1>
 </div>
@@ -20,8 +43,12 @@
             
             
         <div class="list">
-        
-          <label class="item item-input item-floating-label" style="margin-top:40px">
+        <form target="fake-target" method="POST" action="https://docs.google.com/a/motifworks.com/forms/d/1VwxM9RVSCIneXFe5f1Cwg2_K6g2B9i5DcCvPLQPhUAE/formResponse" onsubmit="custommsg(); return true;">
+    <input id="name" name="Name" type="text" placeholder="First Name">
+
+    <input type="submit" name="submit" value="Submit">
+</form>
+          <!-- <label class="item item-input item-floating-label" style="margin-top:40px">
             <div class="input-label">Name of Superhero</div>
             <input type="text" style="margin-left:80px" placeholder="Name">
           </label>
@@ -49,7 +76,7 @@
 
           <button class="button button-full button-positive" ng-click="clicked()">
               Submit
-          </button>
+          </button> -->
         </div>
         </div>
     </ion-content>
