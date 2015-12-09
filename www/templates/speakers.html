@@ -1,38 +1,45 @@
 <!DOCTYPE html>
 <html>
   <head>
-  	<link href="../lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="../lib/ionic/css/ionic.css" rel="stylesheet">
     <script src="../lib/ionic/js/ionic.bundle.js"></script>
     <script src="../js/app.js"></script>
     <script src="../js/controllers.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
     <script>
       angular.module('ionicApp', ['ionic'])
     </script>
     <script type="text/javascript">
-function custommsg() {
-  var first = document.getElementById("name").value;
-  $.ajax({
-                url: "https://docs.google.com/a/motifworks.com/forms/d/1VwxM9RVSCIneXFe5f1Cwg2_K6g2B9i5DcCvPLQPhUAE/formResponse",
-                data: { "Name": first,
-                 },
-                type: "POST",
-                dataType: 'xml',
-                crossDomain: true,
-                statusCode: {
-                0: function() {
+    function OnDropDownChange(dropDown) {
+        var selectedValue = dropDown.options[dropDown.selectedIndex].value;
+        document.getElementById("year").value = selectedValue;
+    }
+ </script>
+    <script type="text/javascript">
+    function custommsg() {
+      var No1 = document.getElementById('name').value;
+        var No2 = document.getElementById('year').value;
+
+           var params = {name: No1, batch:No2}
+      $.ajax({
+        url: "https://dweet.io/dweet/for/solstice2015superhero?" + No1 + "&" + No2,
+      type: "POST",
+      dataType: 'json',
+      crossDomain: true,
+      statusCode: {
+        0: function() {
                     //Success message
-                },
-                200: function() {
+                  },
+                  200: function() {
                     //Success Message
+                  }
                 }
-            }
-            });
-            }
+              });
+    }
 </script>
+
   </head>
-<body ng-app="starter" ng-controller="post">
+<body ng-app="starter" ng-controller="TestCtrl">
 <div class="bar bar-header bar-assertive">
   <h1 class="title">Superhero</h1>
 </div>
@@ -40,26 +47,48 @@ function custommsg() {
     <ion-content>
         <h4 style="margin-top:65px" >Nominate a super hero from your class.</h4>
         <div style="margin-top:20px" class="list animate-fade-slide-in-right">
-            
-            
         <div class="list">
-        <form target="fake-target" method="POST" action="https://docs.google.com/a/motifworks.com/forms/d/1VwxM9RVSCIneXFe5f1Cwg2_K6g2B9i5DcCvPLQPhUAE/formResponse" onsubmit="custommsg(); return true;">
-    <input id="name" name="Name" type="text" placeholder="First Name">
-
-    <input type="submit" name="submit" value="Submit">
+        <form target="fake-target" method="POST" onsubmit="custommsg(); return true;">
+          <label class="item item-input item-floating-label" style="margin-top:40px">
+            <div class="input-label">Name of Superhero</div>
+            <input id="name" required name="Name" type="text" placeholder="Name">
+          </label>
+    <div class="item item-input item-select">
+            <div class="input-label">
+              Year
+            </div>
+            <select type="text" onChange="OnDropDownChange(this);">
+              <option selected>2002</option>
+              <option>2003</option>
+              <option>2004</option>
+              <option>2005</option>
+              <option>2006</option>
+              <option>2007</option>
+              <option>2008</option>
+              <option>2009</option>
+              <option>2010</option>
+              <option>2011</option>
+              <option>2012</option>
+              <option>2013</option>
+              <option>2014</option>
+              <option>2015</option>
+            </select>
+            <input required type="text" id="year" value="" />
+          </div>
+    
+<!-- <input id="year" name="Name" type="text" placeholder="First Name"> -->
+    <input class="button button-full button-positive" type="submit" ng-click="clicked()" name="submit" value="Submit">
 </form>
           <!-- <label class="item item-input item-floating-label" style="margin-top:40px">
             <div class="input-label">Name of Superhero</div>
             <input type="text" style="margin-left:80px" placeholder="Name">
           </label>
-
           <ion-item class="item item-input item-select">
             <div class="input-label">
               Year
             </div>
             <select>
-              <option selected>2002</option>
-              <option>2003</option>
+              <option selected>2003</option>
               <option>2004</option>
               <option>2005</option>
               <option>2006</option>
@@ -84,4 +113,3 @@ function custommsg() {
 
 </body>
 </html>
-  
