@@ -50,14 +50,14 @@
       <form target="fake-target" method="POST" onsubmit="custommsg()">
         <label class="item item-input item-floating-label" style="margin-top:40px">
           <div class="input-label">Name of Superhero</div>
-          <input id="name" required name="Name" type="text" placeholder="Name">
+          <input id="name" style="margin-left:80px" required name="Name" type="text" placeholder="Name">
         </label>
-        <div class="item item-input item-select">
+        <ion-item class="item item-input item-select">
           <div class="input-label">
             Year
-          </div>
-          <select type="text" onChange="OnDropDownChange(this);">
-            <option selected>2002</option>
+          
+          <select type="text" style="margin-left:80px; margin-top:-26px; "  onChange="OnDropDownChange(this);">
+            <option>2002</option>
             <option>2003</option>
             <option>2004</option>
             <option>2005</option>
@@ -70,13 +70,17 @@
             <option>2012</option>
             <option>2013</option>
             <option>2014</option>
-            <option>2015</option>
+            <option selected>2015</option>
+            <!-- <option>2015</option> -->
           </select>
-          <input required type="text" id="year" value="" />
-        </div>
+          </div>
+        </ion-item>
+        <input required type="hidden" id="year" value="" />
         
         <!-- <input id="year" name="Name" type="text" placeholder="First Name"> -->
-        <input class="button button-full button-positive" type="submit" ng-click="clicked()" name="submit" value="Submit">
+        <button class="button button-full button-positive" ng-click="clicked()" type="submit" name="submit" value="Submit" >Submit
+         
+        </button>
       </form>
       
     </div>
