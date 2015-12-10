@@ -106,11 +106,20 @@ angular.module('starter.controllers', [])
 })
 
 .controller('TestCtrl', ['$scope',function($scope) {
-
-   $scope.clicked = function(){
+  $scope.Number = '';
+  $scope.$watch('superhero', function(newValue){
+     if(newValue.length === 0){
+       $scope.clicked = function(){
+        alert("Please enter the name.");
+    }
+     } else {
+       $scope.clicked = function(){
         alert("Your Superhero successfully submitted.");
     }
-}]);
+     }
+   });
+ }]);
+
 
 // .controller('ChatsCtrl', function($scope, Chats) {
 //   // With the new view caching in Ionic, Controllers are only called

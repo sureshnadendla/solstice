@@ -19,7 +19,7 @@
   function custommsg() {
     var No1 = document.getElementById('name').value;
     var No2 = document.getElementById('year').value;
-
+if (No1.value != "") {
     $.ajax({
       url: "https://dweet.io/dweet/for/solstice2015superhero?" + "name=" + No1 + "&" + "batch=" + No2,
       type: "POST",
@@ -34,11 +34,16 @@
                   }
                 }
               });
+     alert("Your Superhero is successfully submitted.");
+  }
+  else{
+     alert("enter.");
+  }
   }
   </script>
 
 </head>
-<body ng-app="starter" ng-controller="TestCtrl">
+<body ng-app="starter">
   <div class="bar bar-header bar-assertive">
     <h1 class="title">Superhero</h1>
   </div>
@@ -50,12 +55,11 @@
       <form target="fake-target" method="POST" onsubmit="custommsg()">
         <label class="item item-input item-floating-label" style="margin-top:40px">
           <div class="input-label">Name of Superhero</div>
-          <input id="name" style="margin-left:80px" required name="Name" type="text" placeholder="Name">
+          <input id="name" ng-model="Number" style="margin-left:80px" required name="Name" type="text" placeholder="Name">
         </label>
         <ion-item class="item item-input item-select">
           <div class="input-label">
             Year
-          
           <select type="text" style="margin-left:80px; margin-top:-26px; "  onChange="OnDropDownChange(this);">
             <option>2002</option>
             <option>2003</option>
@@ -78,7 +82,7 @@
         <input required type="hidden" id="year" value="" />
         
         <!-- <input id="year" name="Name" type="text" placeholder="First Name"> -->
-        <button class="button button-full button-positive" ng-click="clicked()" type="submit" name="submit" value="Submit" >Submit
+        <button class="button button-full button-positive" ng-click="custommsg()" type="submit" name="submit" value="Submit" >Submit
          
         </button>
       </form>
